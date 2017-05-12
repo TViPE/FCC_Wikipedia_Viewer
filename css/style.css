@@ -68,5 +68,14 @@ a {
 	text-decoration: none !important;
 	color: #ffffff !important;
 	font-size: 1.5em;
+
+	-webkit-transition: color .55s ease;
+	-moz-transition: color .55s ease;
+	-ms-transition: color .55s ease;
+	-o-transition: color .55s ease;
+	transition: color .55s ease;
+}
+a:hover {
+	color: #f4b942 !important;
 }
 
