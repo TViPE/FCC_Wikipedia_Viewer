@@ -1,7 +1,12 @@
 body{
   background-color: #343d46 !important;
 }
-
+header {
+	color: #dbab3d;
+	font-size: 2em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 .box{
   margin: 100px auto;
   width: 300px;
