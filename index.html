@@ -21,12 +21,22 @@
 	<script type="text/javascript" src="https://code.jquery.com/color/jquery.color-2.1.2.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body ng-app="WikiApp" ng-controller="WikiCtrl">
+	<header class="text-center">Wikipedia Viewer</header>
 	<div class="box">
-		<div class="text-center white-text"><a href="https://en.wikipedia.org/wiki/Special:Random">Click here for a random article</a></div><br>
-		<div class="container-1">
+		<div class="text-center white-text"><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Click here for a random article</a></div><br>
+		<div class="container-1" ng-submit="search()">
 			<span class="icon"><i class="fa fa-search"></i></span>
-			<input type="search" id="search" placeholder="Search...">
+			<input type="search" id="search" placeholder="Search..." ng-model="searchTxt">
 		</div>
+	</div>
+	<div class="wrapper">
+		<ul><a ng-href="{{result.page}}" target="_blank" ng-repeat="result in results">
+			<li>
+				<h1>{{result.title}}</h1>
+				<p>{{result.body}}</p>
+			</li>
+		</a>	
+		</ul>
 	</div>
 </body>
