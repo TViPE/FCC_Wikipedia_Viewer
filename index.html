@@ -25,16 +25,16 @@
 	<header class="text-center">Wikipedia Viewer</header>
 	<div class="box">
 		<div class="text-center white-text"><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Click here for a random article</a></div><br>
-		<div class="container-1" ng-submit="search()">
+		<form class="container-1" ng-submit="search()">
 			<span class="icon"><i class="fa fa-search"></i></span>
 			<input type="search" id="search" placeholder="Search..." ng-model="searchTxt">
-		</div>
+		</form>
 	</div>
 	<div class="wrapper">
-		<ul><a ng-href="{{result.page}}" target="_blank" ng-repeat="result in results">
-			<li>
+		<ul><a ng-href="{{result.page}}" target="_blank" ng-repeat="result in resultArray">
+			<li><a href=""></a>
 				<h1>{{result.title}}</h1>
-				<p>{{result.body}}</p>
+				<p>{{result.extract}}</p>
 			</li>
 		</a>	
 		</ul>
