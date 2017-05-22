@@ -3,6 +3,7 @@ app.controller("WikiCtrl", function ($scope, $http){
 	$scope.search =  function() {
 		var query= $scope.searchTxt;
 		var url = "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=" + query;
+		var page = "https://en.wikipedia.org/?curid=";
 		console.log(url);
 		$http.get(url)
 		.success(function(data){
@@ -15,10 +16,10 @@ app.controller("WikiCtrl", function ($scope, $http){
 				$scope.result.ns = value.ns;
 				$scope.result.pageid = value.pageid;
 				$scope.result.title = value.title;
+				$scope.result.pageUrl = page + $scope.result.pageid;
 				$scope.resultArray.push($scope.result);
-
 			});
-			console.log($scope.dataArray);
+			$scope.searchTxt = "";
 		})	
 		.error(function(data, status){
 			console.log("Error" + data + status);
