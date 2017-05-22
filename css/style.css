@@ -84,3 +84,49 @@ a:hover {
 	color: #f4b942 !important;
 }
 
+.wrapper {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+ul,li { 
+	list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0;
+    padding-top: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+li {
+	cursor: pointer;
+}
+
+
+
+#resultItem {
+	color: black;
+	background-color: white;
+	margin: 0 auto;
+
+	-webkit-transition: border .55s ease;
+	-moz-transition: border .55s ease;
+	-ms-transition: border .55s ease;
+	-o-transition: border .55s ease;
+	transition: border .55s ease;
+}
+
+#resultItem:hover {
+	border-left: 8px solid #dbab3d;
+}
+
+#resultTitle {
+	color: #343d46;
+}
+
+#resultExtract {
+	padding-bottom: 20px;
+	color: #000000;
+}
+
