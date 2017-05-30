@@ -5,11 +5,11 @@
 The purpose of this project is to obtain the articles relating to the searching query from the users. The users can also click on the random article. This random article will direct the users to the random wikipedia article.
 
 The technologies used in this project:
-	1. HTML
-	2. CSS - Bootstrap
-	3. JavaScript - AngularJS
-	4. jQuery
-	5. Wikipedia API (https://www.mediawiki.org/wiki/API:Main_page)
+1. HTML
+2. CSS - Bootstrap
+3. JavaScript - AngularJS
+4. jQuery
+5. Wikipedia API (https://www.mediawiki.org/wiki/API:Main_page)
 
 Live Demo: [Demo](tvipe.github.io/FCC_Wikipedia_Viewer/)
 
