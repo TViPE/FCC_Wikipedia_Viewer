@@ -11,12 +11,12 @@ The technologies used in this project:
 4. jQuery
 5. Wikipedia API (https://www.mediawiki.org/wiki/API:Main_page)
 
-Live Demo: [Demo](tvipe.github.io/FCC_Wikipedia_Viewer/)
+Live Demo: [Demo](https://tvipe.github.io/FCC_Wikipedia_Viewer/)
 
 ## Screenshots from the project
-![Alt text](img/screenshot.png)
+![Alt text](https://github.com/TViPE/FCC_Wikipedia_Viewer/blob/master/img/screenshot_00.png)
 
-![Alt text](img/screenshot.png)
+![Alt text](https://github.com/TViPE/FCC_Wikipedia_Viewer/blob/master/img/screenshot_01.png)
 
 If you want to create your own wikipedia view application , you can download or clone this repository for consultation. Below are some helpful tips that can help you building this project.
 
